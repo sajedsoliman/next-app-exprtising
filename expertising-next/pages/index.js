@@ -29,7 +29,7 @@ export default function Home({ eom }) {
 }
 
 export const getServerSideProps = async (context) => {
-	const res = await fetch(`${server}/eom`);
+	const res = await fetch(`https://jsonplaceholder.typicode.com/users/1`);
 	const eom = await res.json();
 
 	return {
